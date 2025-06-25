@@ -1,25 +1,21 @@
-button {
-  cursor: pointer;
+#TopBox {
+  display: grid;
+  /* grid-template-columns: repeat(2, 50%); */
+  grid-template-columns: 70% 30% 1fr;
+  /* grid-template-rows: 600px 10px; */
 }
 
-#playList {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-#play-btn {
-  width: 20px;
-  height: 20px;
+#containerLeft {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 30px;
 }
 
-#LpImg {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+#lpImg {
+  width: 40%;
   transition: transform 0.3s ease;
 }
 
@@ -35,4 +31,14 @@ button {
   to {
     transform: rotate(360deg);
   }
+}
+
+#containerRight {
+  padding-top: 100px;
+}
+
+#BottomBox {
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
 }

@@ -10,20 +10,24 @@
 </head>
 
 <body>
-  <div id="playList">
-    <img src="./img/lp.png" alt="lp_img" id="LpImg">
-    <div>
-      <button>이전</button>
-      <button type="button" id=""><img id="play-btn" src="./img/play.png" alt=""></button>
-      <button>이후</button>
+  <div id="TopBox">
+    <div id="containerLeft">
+      <img src="./img/lp.png" alt="lpImg" id="lpImg">
+      <div id="btnBox">
+        <button>이전곡</button>
+        <button id="playBtn">재생</button>
+        <button>다음 곡</button>
+      </div>
+    </div>
+    <div id="containerRight">
+      <input type="text">
+      <button>검색</button>
     </div>
   </div>
-  <div>
-    <input type="text">
-    <button>검색</button>
+  <div id="BottomBox">
+    <div>플레이리스트 되고 있는 곡</div>
+    <div>리스트</div>
   </div>
-
-
 </body>
 <script src="./script.js"></script>
 

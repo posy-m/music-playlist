@@ -1,26 +1,16 @@
-const lpImg = document.getElementById("LpImg");
-const playBtnImg = document.getElementById("play-btn");
+const lpImg = document.getElementById('lpImg')
+const playBtn = document.getElementById('playBtn')
 
 let isPlaying = false;
 
-playBtnImg.parentElement.addEventListener("click", () => {
+playBtn.addEventListener('click', () => {
   if (!isPlaying) {
-    // LP 이미지 회전 시작
-    lpImg.classList.add("spin");
-
-    // 버튼 이미지 '일시정지'로 변경
-    playBtnImg.src = "./img/temporary.png";
-    playBtnImg.alt = "일시정지 버튼";
-
+    lpImg.classList.add('spin');
+    playBtn.textContent = '일시정지';
     isPlaying = true;
   } else {
-    // LP 회전 멈춤
-    lpImg.classList.remove("spin");
-
-    // 버튼 이미지 '재생'으로 변경
-    playBtnImg.src = "./img/play.png";
-    playBtnImg.alt = "재생 버튼";
-
-    isPlaying = false;
+    lpImg.classList.remove('spin');
+    playBtn.textContent = '재생'
+    isPlaying = false
   }
-});
+})

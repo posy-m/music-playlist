@@ -5,6 +5,8 @@
   /* grid-template-rows: 600px 10px; */
 }
 
+/* 왼쪽 박스 */
+
 #containerLeft {
   display: flex;
   align-items: center;
@@ -33,12 +35,27 @@
   }
 }
 
+/* 오른쪽 */
+
 #containerRight {
   padding-top: 100px;
 }
 
+/* 아래  */
+
 #BottomBox {
-  padding-top: 50px;
+  padding: 3rem 0 0 3rem;
   display: flex;
   gap: 20px;
+}
+
+#currentPlay {
+  width: 20rem;
+  height: 15rem;
+  background-color: aqua;
+}
+
+#playList {
+  border: 1px solid black;
+  width: 85%;
 }
